@@ -25,6 +25,10 @@ export default {
   },
   methods: {
     submit: function(value) {
+      if (!value.length) {
+        alert("啥都不填，你提交你妈呢");
+        return;
+      }
       this.list.push(value);
       this.value = "";
     },
