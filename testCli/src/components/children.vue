@@ -8,6 +8,7 @@ export default {
   methods: {
     fatherclick: function() {
       this.$parent.fatherclick();
+      console.log("1");
     }
   }
 };
